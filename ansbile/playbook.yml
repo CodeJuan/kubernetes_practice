@@ -1,1 +1,6 @@
 # install docker 1.9
+---
+- hosts: g530
+  tasks:
+  - name: ping
+    ping:
