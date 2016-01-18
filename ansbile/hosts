@@ -1,0 +1,8 @@
+[master]
+i3 ansible_user=i3 ansible_ssh_host=192.168.1.245
+
+
+[million]
+g530 ansible_user=g530 ansible_ssh_host=192.168.1.173
+g540 ansible_user=g540 ansible_ssh_host=192.168.1.148
+g640 ansible_user=g640 ansible_ssh_host=192.168.1.241
