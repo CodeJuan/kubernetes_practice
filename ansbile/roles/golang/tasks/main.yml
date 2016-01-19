@@ -1,0 +1,10 @@
+---
+- name: wget golang
+  command: wget https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz
+  command: tar -C /usr/local -xzf go1.5.3.linux-amd64.tar.gz
+- name: export env
+  lineinfile:
+    dest=~/.bashrc
+    line="export GOROOT="/usr/local/go"
+    line="export PATH=$PATH:$GOROOT/bin"
+    line="export GOPATH="$HOME/code/go_code"
