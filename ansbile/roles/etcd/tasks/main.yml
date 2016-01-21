@@ -1,0 +1,11 @@
+---
+- name: wget etcd
+  sudo: yes
+#  copy: src=~/save/kubernetes/etcd/ dest=/usr/local
+  environment:
+    PATH: $PATH:/usr/local/etcd
+
+
+
+
+
